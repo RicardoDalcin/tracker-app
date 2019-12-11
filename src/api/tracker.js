@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { AsyncStorage } from 'react-native'
 
-const instanc = axios.create({
+const instance = axios.create({
   baseURL: 'http://b2dbad4d.ngrok.io'
 })
 
