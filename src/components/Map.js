@@ -22,11 +22,11 @@ const Map = () => {
     >
       <Circle
         center={currentLocation.coords}
-        radius={10}
-        strokeColor="rgba(158,158,255, 1.0)"
-        fillColor="rgba(158,158,255,0.3)"
+        radius={3}
+        strokeColor="rgba(0, 204, 102, 1.0)"
+        fillColor="rgba(0, 204, 102, 0.4)"
       />
-      <Polyline coordinates={locations.map(loc => loc.coords)} />
+      <Polyline strokeWidth={3} strokeColor={"rgba(0, 204, 102, 0.4)"} coordinates={locations.map(loc => loc.coords)} />
     </MapView>
   )
 }
